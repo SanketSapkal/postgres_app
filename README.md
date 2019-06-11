@@ -1,7 +1,10 @@
 # PostgresApp
 
-PostgresApp, expertimental elixir application to import export data
-from Postgres tables.
+PostgresApp, expertimental elixir application to import export data from Postgres tables.
+
+Application for streaming postgres table data via HTTP chunked encoding.
+This application has been written without using any ORM libraries or
+framework scaffoldings to avoid extra code and best performance.
 
 1e6 records are put into the source table using COPY command. The pool of
 connections speeds up the insert operation.
